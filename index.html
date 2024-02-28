@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Azel Company</title>
+</head>
+
+<body>
+  <div class="navbar" id="home">
+    <div class="logo"><a href="#home">azel coffe</a></div>
+    <div class="nav-items">
+      <a href="#home">Beranda</a>
+      <a href="#our-team">Tim kami</a>
+      <a href="#about">Tentang kami</a>
+      <a href="#pesan">Masukan</a>
+    </div>
+  </div>
+  <img src="assets/banner.jpg" alt="Banner Azel Store" class="banner-image">
+  <div class="banner-content">
+    <h1>Welcome to our company</h1>
+    <p>Rasakan kehangatan di Setiap Cangkir</p>
+  </div>
+
+
+  <h2 id="our-team">Tim kami</h2>
+  <div class="profile-picture">
+    <div class="profile">
+      <img src="assets/orang3.jpg" alt="Profile Picture">
+      <div class="name">Al Hajjri Prima Saputra</div>
+    </div>
+    <div class="profile">
+      <img src="assets/orang2.jpg" alt="Profile Picture">
+      <div class="name">Haejin</div>
+    </div>
+    <div class="profile">
+      <img src="assets/orang.jpg" alt="Profile Picture">
+      <div class="name">Ji-young</div>
+    </div>
+  </div>
+
+  <hr>
+  <div class="container" id="about">
+    <div class="profile-section">
+      <h2>Tentang Azel Coffee</h2>
+      <p>Azel Coffee didirikan dengan semangat dan dedikasi untuk menyajikan kopi berkualitas tinggi kepada pencinta
+        kopi di seluruh dunia. Dengan memulai perjalanan kami pada tahun 2022, kami telah berkomitmen untuk memilih biji
+        kopi terbaik, mengolahnya dengan hati-hati, dan menyajikan kopi dengan cara yang membawa kepuasan maksimal
+        kepada pelanggan kami.</p>
+    </div>
+    <div class="profile-section">
+      <h3>Filosofi Kami</h3>
+      <p>Di Azel Coffee, kami percaya bahwa secangkir kopi bukan hanya tentang rasa, tapi juga tentang pengalaman.
+        Setiap sorotan kopi yang kami sajikan adalah perjalanan; dari ladang kopi yang subur hingga ke tangan Anda. Kami
+        berdedikasi untuk memastikan bahwa setiap langkah dalam perjalanan ini dilakukan dengan penuh perhatian terhadap
+        kualitas dan keberlanjutan.</p>
+    </div>
+    <div class="profile-section">
+      <h3>Tim Kami</h3>
+      <p>Di balik setiap cangkir Azel Coffee yang sempurna, ada tim dari barista berpengalaman, ahli kopi, dan staf
+        pendukung yang berdedikasi. Kami semua berbagi satu visi: menyajikan kopi terbaik sambil memberikan pengalaman
+        tak terlupakan kepada setiap pelanggan.</p>
+    </div>
+  </div>
+  <hr>
+
+  <div class="pesan">
+    <h2>Kritik & Saran</h2>
+    <div class="form-box-container">
+      <form id="form" action="/" class="form-content" name="pesan">
+        <div class="form-group">
+          <label
+            for="name">Nama&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+          <input type="text" id="name" name="name">
+          <div class="eror"></div>
+        </div>
+        <div class="form-group">
+          <label for="tgl_lahir">Tanggal Lahir&nbsp;&nbsp;:</label>
+          <input type="date" id="tgl_lahir" name="tgl_lahir">
+          <div class="eror"></div>
+        </div>
+        <div class="form-group">
+          <p> <label for="gender">Jenis kelamin&nbsp;&nbsp;:</label>
+            <input type="radio" id="pria" name="gender" value="Pria">Pria
+            <input type="radio" id="wanita" name="gender" value="Wanita">Wanita
+          </p>
+          <div class="eror" id="gender-error"></div>
+        </div>
+
+        <div class="form-group">
+          <label
+            for="pesan">Pesan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+          <textarea id="pesan" rows="4"></textarea>
+          <div class="eror"></div>
+        </div>
+        <button onclick="kirim()">Submit</button>
+      </form>
+
+      <div class="box">
+        <b>Current time:</b>
+        <span id="current-time">-</span><br><br><br>
+        <b>Nama&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp :</b><span
+          id="display-name"></span><br>
+        <b>Tanggal lahir&nbsp&nbsp&nbsp :</b><span id="display-tgl_lahir"></span><br>
+        <b>Jenis kelamin&nbsp :</b><span id="display-jk"></span><br>
+        <b>Pesan&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp :</b><span
+          id="display-pesan"></span><br>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Azel Coffee. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://twitter.com" target="_blank">Twitter</a> |
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </div>
+      <p>Contact us: azelforbussiness.com</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

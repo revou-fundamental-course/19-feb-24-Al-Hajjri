@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: black; 
+  background-image: url('path/to/your/image.jpg'); 
+  background-size: cover; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+}
+.navbar .logo {
+border:2px solid white;
+border-radius:7px;
+padding:4px;
+}
+.navbar .logo a {
+  color: brown;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar .logo a:hover {
+color:white;
+}
+
+.navbar .nav-items a {
+  color: white;
+  text-decoration: none;
+  margin-left: 40px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-items a:hover {
+  color: brown;
+  text-decoration: underline;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  opacity: 0.7;
+  max-height: 800px;
+  background-size: cover
+}
+
+.banner-content {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.banner-content h1 {
+  font-size: 3em;
+  color: white;
+  
+}
+
+.banner-content p {
+  font-size: 1em;
+  color: white;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.profile-section {
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  margin: 20px 0;
+}
+#our-team{
+  text-align:center;
+  margin-top:30px;
+  color:white;
+}
+
+.profile-picture {
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  
+}
+
+.profile {
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  margin: 10px; 
+}
+
+.profile img {
+  width: 150px; 
+  height: 150px;
+  border-radius: 50%; 
+  object-fit: cover; 
+  border: 3px solid #ffffff; 
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.name {
+  margin-top: 10px; 
+  font-size: 1em; 
+  color: white;
+}
+
+.pesan {
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+  display: block;
+}
+
+.pesan h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.form-box-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-content, .box {
+  flex: 1;
+  margin-bottom: 20px; 
+}
+
+.box {
+  width: 100%; 
+  height: 350px;
+  border: 4px solid white;
+  padding:20px;
+  border-radius:25px;
+
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group radio,
+.form-group textarea {
+  width: 75%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button{
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width:100%;
+}
+
+button:hover {
+  background-color: brown;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer .container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.form-group .eror{
+  color:red;
+  font-size:9px;
+  height:13px;
+  margin-bottom:10px;
+  margin-left:15%;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .navbar .nav-items a {
+    margin-left: 20px;
+  }
+
+  .banner-content h1 {
+    font-size: 2em;
+  }
+
+  .profile-section, .pesan, .container {
+    padding: 20px 10px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="date"],
+  .form-group radio,
+  .form-group textarea {
+    width: 75%; 
+  }
+
+  .profile img {
+    width: 120px; 
+    height: 120px;
+  }
+
+  .name, .pesan h2 {
+    font-size: 0.9em; 
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar .nav-items a {
+    margin-left: 20px;
+  }
+
+  .banner-content h1 {
+    font-size: 2em;
+  }
+
+  .profile-section, .pesan, .container {
+    padding: 20px 10px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="date"],
+  .form-group radio,
+  .form-group textarea {
+    width: 100%; 
+  }
+
+  .profile img {
+    width: 120px; 
+    height: 120px;
+  }
+
+  .name, .pesan h2 {
+    font-size: 0.9em; 
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar {
+    flex-direction: column; 
+  }
+
+  .navbar .logo, .navbar .nav-items {
+    text-align: center;
+  }
+
+  .navbar .nav-items a {
+    margin-left: 0; 
+    display: block; 
+    margin-bottom: 10px;
+  }
+
+  .banner-content h1 {
+    font-size: 1.5em;
+  }
+
+  .banner-content, .profile, .pesan, .footer .container {
+    padding: 15px;
+  }
+
+  button {
+    width: auto; 
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .banner-content h1 {
+    font-size: 2em;
+  }
+  .banner-content p {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-content h1 {
+    font-size: 1.5;
+  }  .banner-content p {
+    font-size: 0.8em;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .banner-content h1 {
+    font-size: 1.5em;
+  }  .banner-content p {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .banner-content h1 {
+    font-size: 1em;
+  }  .banner-content p {
+    font-size: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .banner-content h1 {
+    font-size: 1.25em;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-box-container {
+    flex-direction: row; 
+  }
+
+  .form-content, .box {
+    flex-basis: calc(50% - 20px); 
+  }
+  .box {
+    width: auto; 
+    margin-left: 20px; 
+  }
+}
+
